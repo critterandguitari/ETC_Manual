@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+<script src="jquery.toc.js" type="text/javascript"></script>
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {padding: 12px;}
+.w3-bar a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+:target:before {
+content:"";
+display:block;
+height:40px; /* fixed header height*/
+margin:-40px 0 0; /* negative fixed header height */
+}
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-opennav w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">ETC Manual</a>
+  </div>
+</div>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:51px;" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4><b>Contents</b></h4>
+<ul data-toc="div.w3-main" data-toc-headings="h1,h2"></ul>
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+<div class="w3-main" style="margin-left:250px;">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>Chapter Zero: Quick-start Guide</h1>
+
+<h3>Let there be visuals!</h3>
+
+<p>Welcome to <strong>The ETC Television Center</strong> (or simply <strong>ETC</strong> to her friends)! Time is money so let’s get you up and running…</p>
+
+<hr />
+
+<h2>Package Manifest</h2>
+
+<p>Along with this card, there are two main items in the box you just opened.</p>
+
+<ul>
+	<li><strong>Your ETC.</strong> Also note that a tiny white USB drive is also plugged in on the right side of the unit. This drive holds the patches that ETC will use to paint its pictures.</li>
+	<li><strong>Its power adapter.</strong> While the power supply has prongs for US-style wall sockets, it will work with input voltages from 100 to 240VAC at 50/60Hz. You may need an adapter for the shape of your wall socket.</li>
+</ul>
+
+<hr />
+
+<h2>Getting Started</h2>
+
+<p>Follow these steps to make your sound visual.</p>
+
+<ol>
+	<li>Connect the <code>HDMI Out</code> port to a powered-up HDMI® monitor.</li>
+	<li>Connect the power adapter to a power outlet, and then connect its plug to the <code>9VDC</code> power port, the leftmost port on the back of ETC. The top row’s <em>Status LED</em> will indicate progress, glowing blue as ETC will is booting up, and then white when things are operational. Your connected monitor will also show the boot up process.</li>
+	<li>Press the top row’s <em>On Screen Display</em> button (ICON IMAGE). Your monitor should now show an overlay of current system information. You can press the button once more to toggle off this display.</li>
+	<li>To transmute audio to video, connect a 1/4&quot; audio cable to the <code>Audio In</code> port, and turn up the top row’s <em>Audio Input Gain</em> knob (ICON IMAGE). (Feel free to crank it; you won’t hurt ETC’s ears.) As long as an audio signal is coming in, you should start getting pictures on your HDMI display.</li>
+	<li>When you have had enough fun for now, press the <em>Shutdown</em> button (ICON IMAGE) on the top left of ETC. After holding it down for a couple seconds, the <em>Status LED</em> will glow pink while the device shuts itself down. Once the <em>Status LED</em> is off, it is safe to unplug the power supply.</li>
+</ol>
+
+<h1>Chapter One: ETC™ Concepts</h1>
+
+<h3>What is this box with the curious icons?!‽</h3>
+
+<p>Again, welcome to the world of <strong>ETC</strong>! As this video instrument has an inherent range and can work for different people in different ways, let us start by talking about what it is and where on Earth (or beyond!) it came from. We’ll then look at some of the basic concepts in play and make sure we are speaking the same language. Then we’ll close with a word on using this guide, preparing you to go forth and visually multiply. So back to our origin story…</p>
+
+<hr />
+
+<h2>Where did The ETC Television Center come from?</h2>
+
+<p>We at Critter &amp; Guitari (hello!) have released video boxes before, and we are still rather fond of those devices. Their intended use was simple:</p>
+
+<ol>
+	<li>Plug in an audio input, feeding live sound to the box.</li>
+	<li>Plug in a live video output for a projector or other display.</li>
+	<li>Set a couple knobs.</li>
+	<li>Go back to playing music, and live visuals will accompany you.</li>
+</ol>
+
+<p>While ETC preserves this “self-service” approach, a number of other modes and options are present.</p>
+
+<h4>Is ETC ready to go out of the box?</h4>
+
+<p>Yes! Once ETC is connected and powered up (see chapter zero), it will automatically begin creating visuals with the factory modes.</p>
+
+<h4>Does ETC have different methods of creating video?</h4>
+
+<p>Yes! You can cycle forwards and backwards through ETC’s current visual <em>modes</em> by pressing the two <em>Mode Selector buttons</em> on the bottom left of the front panel (around the eyeball icon). Each valid patch on the USB stick is loaded as a mode, and the preloaded factory content provides a survey of unique visual effects.</p>
+
+<h4>Can I play ETC as a video instrument?</h4>
+
+<p>Yes! The knobs and buttons on ETC’s front panel provide direct access to the inner workings of ETC and each available visual mode. To expand your control options, you can connect a pedal to ETC’s <code>Foot Switch</code> port, or even wire up a MIDI controller to the <code>MIDI In</code> port, etc.</p>
+
+<h4>Can I just plug in ETC and go back to playing bass?</h4>
+
+<p>Yes! If audio is running into ETC, a couple of knob tweaks should get you a steady stream of responsive visuals.</p>
+
+<h4>Can I capture still images generating by ETC?</h4>
+
+<p>Yes! The bottom row of ETC has a dedicated <em>Screenshot button</em> (with a camera icon). Pressing this button will capture the current output of ETC to an image file on the USB drive. And if you are a hacker-type, you could even craft a mode that injects the most recently captured screenshot back into the current output. Think feedback, recursion, or something less imaginable.</p>
+
+<h4>Can I feed still images into ETC as source material?</h4>
+
+<p>Yes! Modes can be made to use still images from within the mode’s file structure. A couple of the factory modes use this approach and are good examples if you want to explore this avenue.</p>
+
+<h4>Hold up. Can I edit ETC’s modes?</h4>
+
+<p>Yes! All of ETC’s modes are written in <strong>pygame</strong>, an open-source Python library. This means that for the brave, every mode on your USB drive could be edited. And for the truly bold, new modes of your own can be created.</p>
+
+<h4>So, there is no “right” way to use ETC?</h4>
+
+<p>Exactly! ETC is a vehicle for creating visuals. You may want that in a live performance environment, or you might wish to capture and edit the output. Perhaps you want someone to operate ETC throughout your set, or maybe you yourself just lean over and switch <em>scene</em> presets ever song or two. You might want to get out a text editor and code a new mode, but you can just as easily download new modes that others have written. Any of these choices are valid as long as they serve your purposes!</p>
+
+<hr />
+
+<h2>ETC Concepts</h2>
+
+<p>Our introduction and the sticker on the back of ETC have already hinted at certain ideas and the terms we are using to express them. Let’s take a moment to be clear about the concepts in play.</p>
+
+<p>An ETC <strong>mode</strong> is a method for creating visuals. In audio terms, you could think of each <em>mode</em> as a <em>patch</em>. The mode can be switched instantaneously from the front panel. Each available mode lives on the attached USB drive along with any support files it may need.</p>
+
+<p>In building the initial factory modes, we have considered modes as falling into three broad categories:</p>
+
+<ul>
+	<li>An <em>oscilloscope mode</em> directly visualizes the incoming audio signal. This could take the form of a classic “oscilloscope” signal representation or something far different. Either way, animation is continuously updated with the received audio.</li>
+	<li>A <em>trigger mode</em> also visualizes the incoming audio signal, but it doesn’t draw continually as an oscilloscope mode would. Often, a threshold must be crossed for the audio to get visualized. This could be an audio threshold, where only certain levels of sound cause substantial visual activity. The threshold could also come via a button (such as the <em>Trigger button</em>), a connected <code>Foot Switch</code>, received MIDI notes, or something else altogether.</li>
+	<li>A <em>draw mode</em> creates visuals regardless of whether audio signal is reaching ETC or not. It could still use incoming audio for an effect, but painting should continue without the audio connected.</li>
+</ul>
+
+<p>As these descriptions indicate, there is plenty of wiggle room as modes can readily blend these ideas or go off in completely new directions. But thinking in this way may help you understand the factory modes — and even organize your own ideas for new modes or new categories.</p>
+
+<p>As for the controls of ETC, we think of them as falling into a couple of categories.</p>
+
+<ul>
+	<li><strong>Foreground controls</strong> change parameters of the local mode. Consisting of the four numbered knobs on the front panel, these controls affect settings defined within the currently loaded mode.</li>
+	<li><strong>Background controls</strong> set global parameters. These include the <em>Background Color knob</em> and the <em>Auto Clear Toggle</em>. Even when you change modes or scenes, these parameters are persistent.</li>
+</ul>
+
+<p>An ETC <strong>scene</strong> is essentially a preset. Each scene stores which mode was being used and the setting of all four foreground controls.</p>
+
+<p>The next chapter will explore how to put all of these ideas into action, but understanding modes versus scenes (and foreground controls versus background controls) will let us hit the ground running.</p>
+
+<hr />
+
+<h2>How to Use This Manual</h2>
+
+<p>Certain chapters (such as this one!) are relevant to everyone. But depending on how you plan to use ETC, some information may prove more valuable to you.</p>
+
+<ul>
+	<li>Regardless of your intentions, the quick-start (chapter zero) and concepts information (chapter one) will benefit you.</li>
+	<li>For out-of-the-box usage, the information on operating the hardware (chapter two) will be a central guide, walking you through the functions of the various panel controls and ports. And the factory mode information (see URL?) will walk you through the standard modes and their parameters.</li>
+	<li>If you are looking to load additional modes into ETC, then chapter three will also be useful to you. Then you can scour our online repository of additional ETC modes (URL?).</li>
+	<li>If you want to edit modes or even create some of your own, chapter four will help you prepare your work for ETC.</li>
+</ul>
+
+<p>Just realize that how you use ETC today may be very different from how you use it a week from now. This is to say feel free to skip information that isn’t of use to you today; you may find that later chapters appreciate in value over time. </p>
+
+<h1>Chapter Two: General Operation of ETC™</h1>
+
+<h3>Knowing the knobs and buttons is worth more than a thousand words.</h3>
+
+<p>Up to this point, we have talked about getting ETC plugged in and running, we have discussed some ways to use the device, and we have covered the concepts that underpin the system. So now we should get on with it and make some pretty pictures.</p>
+
+<p>In this chapter, we will walk through ETC from the user’s perspective, with hands fixed on the hardware controllers and eyes on the back panel’s ports. This will naturally address the role and relation of each control within ETC’s structure. Taken as a whole, we will be painting our own picture of ETC’s functions and general operation.</p>
+
+<p>So let’s grab the knobs, push the buttons, and watch the pictures, now, as they fly through the air.</p>
+
+<hr />
+
+<h2>Row 1: Systemic Controls</h2>
+
+<p>The top row of ETC has a number of system-level controls and the only direct feedback element that faces the user. We will take these items from left to right.</p>
+
+<p><strong>The <em>Shutdown</em> button</strong> is a trigger that does exactly what its name implies: it tells ETC to begin shutting the system down.</p>
+
+<p>When ETC is connected to power, the system automatically begins booting up (as described in chapter zero). When you are done using ETC or need to power it down for a moment, hold down the <em>Shutdown</em> button for two seconds or so. During the shutdown process, the <em>Status LED</em> will go from white to pink, and once the unit is ready to be safely unplugged from power, the light will finally go out .</p>
+
+<p><strong>The <em>Status LED</em></strong> is a light that illuminates in various colors to reflect either the state of the ETC hardware, or to indicate that a particular action is being taken or a type of message was just received.</p>
+
+<p>When the <em>Status LED</em> is glowing in one of these colors, it is indicating the following hardware state:</p>
+
+<ul>
+	<li>Blue: ETC is currently starting up. (It has probably just received power.)</li>
+	<li>Red: ETC encountered an error while starting up. If you consistently receive this message, either consult our <a href="https://www.critterandguitari.com/pages/FAQ">FAQ page</a> or <a href="https://www.critterandguitari.com/pages/contact-us">contact us</a>!</li>
+	<li>White: ETC is currently running normally.</li>
+	<li>Pink: ETC is in the process of shutting down. (You likely just pressed the <em>Shutdown</em> button.)</li>
+</ul>
+
+<p>And when the <em>Status LED</em> is showing one of these colors, it is relaying the following information:</p>
+
+<ul>
+	<li>Yellow: A screenshot is being written to the USB drive. (You likely just pressed the <em>Screenshot</em> button.)</li>
+	<li>Green: A MIDI note message was just received by ETC.</li>
+	<li>Purple: A message was just received via the <code>Foot Switch</code> port.</li>
+</ul>
+
+<p><strong>The <em>On Screen Display</em> button</strong> is a toggle that calls up an overlay of current system information.</p>
+
+<p>(SCREENSHOT: On Screen Display)</p>
+
+<p>Information is displayed in two columns. On the left side are:</p>
+
+<ul>
+	<li>The current mode.</li>
+	<li>The most recently loaded scene (if applicable).</li>
+	<li>An indicator for incoming MIDI notes.</li>
+	<li>The current positions of the background and foreground knobs.</li>
+	<li>An indicator of whether the threshold trigger is currently engaged.</li>
+	<li>A level meter for incoming audio signal.</li>
+	<li>An indicator of whether the background clearing function is currently enabled.</li>
+</ul>
+
+<p>The right column includes:</p>
+
+<ul>
+	<li>Thumbnails of the several most recent screen grabs.</li>
+	<li>ETC’s current IP address, in case the USB Wi-Fi dongle is in use. (For more information, see chapter three.)</li>
+	<li>How much of ETC’s memory (RAM) is currently being used.</li>
+	<li>The current frames per second (FPS) output of ETC.</li>
+</ul>
+
+<p>Pressing the <em>On Screen Display</em> button a second time will toggle the display back off screen.</p>
+
+<p><strong>The <em>Audio Input Gain</em> knob</strong> does nothing to affect the internal video system or change the audio that you hear, but it is probably the most consequential control for ETC. This knob scales the incoming audio level before it is processed by ETC for use in the current visual mode. The purpose of this knob is to adjust the strength of the audio signal and scale it into an appropriate range for visualization.</p>
+
+<p>The appropriate setting for this knob will depend on the type of signal you are connecting and the mode you are using. For example:</p>
+
+<ul>
+	<li>Are you connecting a guitar or microphone directly to ETC’s <code>Audio In</code> port? Then you will probably need a higher gain setting for this relatively weak signal.</li>
+	<li>Are you connecting a powered instrument (such as a synthesizer) output, or even the full band’s output from a mixer? Then the <em>Audio Input Gain</em> knob can probably be a bit lower.</li>
+	<li>Are you doing something we can’t imagine? Good job! Adjust the gain knob until you find an appropriate setting for the modes you are using.</li>
+</ul>
+
+<hr />
+
+<h2>Row 2: Background Controls</h2>
+
+<p>While the second row is the most sparsely populated, its two controls are really the glue that hold transitions together for ETC. These background controls set global parameters that are held steady not matter what mode you are in or if you recall a scene.</p>
+
+<p><strong>The <em>Background Color</em> knob</strong> allows you to set the “canvas color” on top of which mode paints its scene. Turning this knob cycles through the available colors.</p>
+
+<p><strong>The <em>Auto Clear Toggle</em> button</strong> is a nice toggle effect available in all situations. This is easier explained with a brief word on how ETC carries out its drawing functions.</p>
+
+<p>Each ETC mode contains one <code>draw</code> function, which is triggered 30 times per second to generate 30 frames per second (FPS) of output. The default behavior for a drawing program like this is to clear the screen right before the <code>draw</code> function is run. (This clearing results in the color set by the <em>Background Color</em> knob covering the screen.) But breaking the rules can be interesting.</p>
+
+<p>The <em>Auto Clear Toggle</em> button allows us to disable this clearing function. When clearing has been toggled off, each new frame of video draws on top of the previous frame, which can create a “hall of mirrors,” recursive effect. Hitting the <em>Auto Clear Toggle</em> button again restores the normal clear function.</p>
+
+<p>So there is a dependent relationship between the <em>Auto Clear Toggle</em> button and the <em>Background Color</em> knob. When clearing has been toggled off, the <em>Background Color</em> knob has no effect since the background is never getting painted. When the button is toggled back to normal clearing behavior, the set background color will be applied again.</p>
+
+<hr />
+
+<h2>Row 3: Foreground Controls</h2>
+
+<p>The third row consists of four numbered knobs. Formally, we could call them <em>Foreground 1 Control</em> knob,<em>Foreground 2 Control</em> knob, etc. Or we could be more collegial and simply call them foreground knob <code>3</code> and foreground knob <code>4</code>. Either would be appropriate.</p>
+
+<p>Each of these foreground controls represents a top-level parameter within the mode. This could be a single parameter that controls one discrete element of the mode, or it could be several parameters wrapped into a true “macro” function. While we don’t know the specifics for each mode (see the factory modes reference (URL) for that type of per-mode information), we know that each patch should have four top-level controls, and that these knobs pull the strings to make each mode its own instrument.</p>
+
+<p>We spoke in chapter one about the difference between modes and scenes, but an additional word is appropriate here on how the foreground knobs behave when moving between modes and scenes.</p>
+
+<p><em>When you load a different <strong>mode</strong>, the current values of the foreground knobs are maintained for the new mode that is loaded.</em> In other words, if you just turned foreground knob <code>1</code> to 3 o’clock and foreground knob <code>3</code> is set to 10 o’clock, ETC will supply those exact same settings to any successive modes that you load.</p>
+
+<p>If the foreground knobs are assigned consistently across different modes you are using, this can offer more stable transitions between modes. For example, if you have loaded several modes that use foreground knob <code>4</code> as a uniform color selection parameter, then that setting would be interpreted similarly as you switch from mode to mode, using that same color value across successive modes. And even if your modes assign their foreground knobs in completely different ways, ETC’s behavior will at least preserve your settings when you switch over to another mode and then back to your original selection.</p>
+
+<p><em>When you load a different <strong>scene</strong>, the current values of the foreground knobs are ignored in favor of the settings stored in the scene.</em> In other words, loading a scene will load the scene’s stored foreground control values into ETC, leaving no connection (for the moment) between the values currently used by the software engine and the physical position of the foreground control knobs.</p>
+
+<p>As we discussed in the concepts portion of chapter one, each scene is basically a snapshot of ETC’s current mode state. This includes the mode that is being used as well as the value of each of the foreground controls at the time the scene was captured. While turning the foreground knobs and switching between modes offers an “organic” experience, loading a scene is a relatively abrupt act, jumping directly to settings that were stored at another time, in another place. This is by design.</p>
+
+<p>Turning a foreground knob is always an absolute gesture: as soon as a change in the knob’s value is detected, it will be applied to ETC’s video engine. This holds true after a scene has been loaded. By turning a foreground knob, the new value there will take over, replacing the scene’s stored value and restoring the connection between the physical control and the software. Again, this may be an abrupt gesture at first —&nbsp;particularly if the stored value and the current knob position are on opposite sides of the control range. But once the knob is turned, all successive tweaks will create smooth value transitions.</p>
+
+<p>And as for how to switch between different modes and scenes (and store new scenes), well it’s funny that you ask…</p>
+
+<hr />
+
+<h2>Row 4: Functional Controls</h2>
+
+<p>The top bottom of ETC has a number of navigation and action-based options, all in the form of tasteful maple buttons. We will look at each niblet, going from left to right.</p>
+
+<p><strong>The <em>Mode Selector</em> buttons</strong> are first up. This pair of trigger buttons on the far left around the eyeball icon allow you to step backward (left) or forward (right) through the modes that are currently loaded on your USB drive.</p>
+
+<p><strong>The <em>Scene Selector</em> buttons</strong> are next. This pair of trigger buttons around the clapperboard icon allow you to step backward (left) or forward (right) through all stored scenes.</p>
+
+<p><strong>The <em>Scene Save</em> button</strong> follows the <em>Scene Selector</em> buttons. This trigger button with the floppy disk icon (remember those?) takes your current mode selection and the values of all four foreground controls and stores them to a new scene. This new scene is placed at the end of the scene list.</p>
+
+<p><strong>The <em>Screenshot</em> button</strong> is a trigger with a camera icon. When pressed, the output of the current video mode is captured to a still image file on ETC’s USB drive. Screenshots created will not include the <em>On Screen Display</em>, even if this overlay is currently visible via the <code>HDMI Out</code> port.</p>
+
+<p>Output files are number from zero (<code>0</code>), are saved as JPEG files (for example, <code>0.jpg</code>, <code>1.jpg</code>, and so forth), and share the specs of ETC’s video output: 1280 pixels wide, 720 pixels high, and a resolution of 72 pixels per inch (PPI).</p>
+
+<p>To access these files, first safely shutdown ETC. You can then connect its USB drive to your own computer. All screenshots will be located in the <code>Grabs</code> folder in the drive’s root (or top) directory.</p>
+
+<p><strong>The <em>Trigger</em> button</strong> is on the bottom right of the panel, and its icon is a rectangle containing an X, marked for action! Pressing this button triggers an assigned visual function within most modes. This trigger action is the equivalent of having audio from the <code>Audio In</code> port cross the threshold. It is most commonly used in <em>trigger modes</em> (as discussed in chapter one), but any mode can connect a function to the threshold behavior.</p>
+
+<p>Pressing the <em>Trigger</em> button will also fill ETC’s buffer of recently received samples with a sine wave. Together with the threshold trigger behavior described above, these two functions make the <em>Trigger</em> button a useful substitute when you do not have audio flowing into ETC. With that being said, many modes can also make use of these trigger messages to supplement incoming audio signals so do try it with all kinds of modes.</p>
+
+<hr />
+
+<h2>The Ports</h2>
+
+<p>Most of the ports on the back of ETC has come up already in conversation, but we’ll take a moment to touch on each of them with any information relevant to this conversation of general functionality.</p>
+
+<p><strong>The <code>9VDC</code> power port</strong> is made for the power supply including with ETC. As with all Critter &amp; Guitari instruments, the power supply’s output specifications are as follows: 9VDC, 1000mA, and a tip with center-positive polarity. If you are uncertain whether a power supply will work with ETC, don’t plug it in to find out.</p>
+
+<p><strong>The <code>HDMI Out</code> port</strong> serves as the video output for ETC.</p>
+
+<p>Next is an unlabeled microSD card slot. This slot comes preloaded with a card that serves as the internal microcomputer’s root disk. We do not recommend ejecting or otherwise manipulating this card as nothing good will come of it.</p>
+
+<p><strong>The <code>MIDI  In</code> port</strong> is for connecting an external MIDI controller. Information on ETC’s MIDI implementation is found in chapter three.</p>
+
+<p><strong>The <code>Audio In</code> port</strong> is a <code>-Mono-</code>(phonic) 1/4&quot; input for audio signal. This audio is made available to your modes in two ways. First, a list of the most recent 100 samples is always available for drawing purposes. And second, the incoming audio is continually assessed to determine if it exceeds a threshold level (roughly 80% of maximum possible amplitude), highly useful for commencing a function.</p>
+
+<p><strong>The <code>Foot Switch</code> port</strong> is a 1/4&quot; jack. It is intended to be connected to a keyboard sustain-/damper-style pedal, which will deliver on/off messages to the current mode. ETC assumes that any connected foot switch has a “normally closed position” (negative polarity). Expression-style pedals can be tried as well, but your results may vary.</p>
+
+<hr />
+
+<h2>An Epilogue on Basic Controls</h2>
+
+<p>Note that we aren’t discussing how to produce certain types of images or effects. While the controls offered by ETC are always the same, each mode is unique its own right and can be used in ways that even we can’t imagine. Do consult the factory modes reference (URL) for a sense of the included options and their range. And if those provided options aren’t enough, then continue with us to the next chapter.</p>
+
+<h1>Chapter Three: Accessing ETC™ from Elsewhere</h1>
+
+<h3>Getting into and out of ETC.</h3>
+
+<hr />
+
+<h2>Working with the USB Drive</h2>
+
+<p>The </p>
+
+<hr />
+
+<h2>ETC’s MIDI Configuration</h2>
+
+<p>As ETC’s <code>MIDI  In</code> port suggests, external MIDI controllers can be connected to it. To properly interact with ETC, we need to know the MIDI implementation of this device. </p>
+
+<hr />
+
+<h2>Accessing ETC via USB Wi-Fi</h2>
+
+
+
+    </div>
+  </div>
+
+
+  <footer>  
+    <div class="w3-container w3-theme-l1">
+      <p>ETC Manual &copy; 2017 Critter &amp; Guitari</p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidenav
+var mySidenav = document.getElementById("mySidenav");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidenav, and add overlay effect
+function w3_open() {
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidenav.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidenav with the close button
+function w3_close() {
+    mySidenav.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
