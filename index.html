@@ -1,75 +1,3 @@
-<!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
-<script src="jquery.toc.js" type="text/javascript"></script>
-
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-.w3-sidenav a,.w3-sidenav h4 {padding: 12px;}
-.w3-bar a {
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-
-:target:before {
-content:"";
-display:block;
-height:40px; /* fixed header height*/
-margin:-40px 0 0; /* negative fixed header height */
-}
-
-.break {page-break-before: always;}
-
-</style>
-<body>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-opennav w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1">ETC Manual</a>
-  </div>
-</div>
-
-<!-- Sidenav -->
-<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:51px;" id="mySidenav">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
-    <i class="fa fa-remove"></i>
-  </a>
-  <h4><b>Contents</b></h4>
-<ul data-toc="div.w3-main" data-toc-headings="h1,h2"></ul>
-</nav>
-
-<!-- Overlay effect when opening sidenav on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
-<div class="w3-main" style="margin-left:250px;">
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-container">
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p class="break"></p><br/>
 <h1>Chapter Zero: Quick-start Guide</h1>
 
 <h3>Let there be visuals!</h3>
@@ -101,7 +29,6 @@ margin:-40px 0 0; /* negative fixed header height */
 	<li>When you have had enough fun for now, press the <em>Shutdown</em> button (ICON IMAGE) on the top left of ETC. After holding it down for a couple seconds, the <em>Status LED</em> will glow pink while the device shuts itself down. Once the <em>Status LED</em> is off, it is safe to unplug the power supply.</li>
 </ol>
 
-<p class="break"></p><br/>
 <h1>Chapter One: ETC™ Concepts</h1>
 
 <h3>What is this box with the curious icons?!‽</h3>
@@ -177,10 +104,10 @@ margin:-40px 0 0; /* negative fixed header height */
 
 <ul>
 	<li><strong>Foreground controls</strong> change parameters of the local mode. Consisting of the four numbered knobs on the front panel, these controls affect settings defined within the currently loaded mode.</li>
-	<li><strong>Background controls</strong> set global parameters. These include the <em>Background Color knob</em> and the <em>Auto Clear Toggle</em>. Even when you change modes or scenes, these parameters are persistent.</li>
+	<li><strong>Background controls</strong> set global parameters. These include the <em>Background Color</em> knob and the <em>Auto Clear Toggle</em>. Even when you change modes, these parameters are persistent.</li>
 </ul>
 
-<p>An ETC <strong>scene</strong> is essentially a preset. Each scene stores which mode was being used and the setting of all four foreground controls.</p>
+<p>An ETC <strong>scene</strong> is essentially a preset. Each scene stores which mode was being used along with the values of all five knobs (including the four foreground controls and the <em>Background Color</em> knob) and whether the <em>Auto Clear Toggle</em> button is enabled or disabled.</p>
 
 <p>The next chapter will explore how to put all of these ideas into action, but understanding modes versus scenes (and foreground controls versus background controls) will let us hit the ground running.</p>
 
@@ -199,7 +126,6 @@ margin:-40px 0 0; /* negative fixed header height */
 
 <p>Just realize that how you use ETC today may be very different from how you use it a week from now. This is to say feel free to skip information that isn’t of use to you today; you may find that later chapters appreciate in value over time. </p>
 
-<p class="break"></p><br/>
 <h1>Chapter Two: General Operation of ETC™</h1>
 
 <h3>Knowing the knobs and buttons is worth more than a thousand words.</h3>
@@ -208,7 +134,7 @@ margin:-40px 0 0; /* negative fixed header height */
 
 <p>In this chapter, we will walk through ETC from the user’s perspective, with hands fixed on the hardware controllers and eyes on the back panel’s ports. This will naturally address the role and relation of each control within ETC’s structure. Taken as a whole, we will be painting our own picture of ETC’s functions and general operation.</p>
 
-<p>So let’s grab the knobs, push the buttons, and watch the pictures, now, as they fly through the air.</p>
+<p>So let’s grab the knobs, push the buttons, and watch the pictures, now, as they fly through the air…</p>
 
 <hr />
 
@@ -229,13 +155,14 @@ margin:-40px 0 0; /* negative fixed header height */
 	<li>Red: ETC encountered an error while starting up. If you consistently receive this message, either consult our <a href="https://www.critterandguitari.com/pages/FAQ">FAQ page</a> or <a href="https://www.critterandguitari.com/pages/contact-us">contact us</a>!</li>
 	<li>White: ETC is currently running normally.</li>
 	<li>Pink: ETC is in the process of shutting down. (You likely just pressed the <em>Shutdown</em> button.)</li>
+	<li>Dim: When the LED is not illuminated, then ETC is not running. Either you haven’t powered it on yet, or you have already shut down the device.</li>
 </ul>
 
 <p>And when the <em>Status LED</em> is showing one of these colors, it is relaying the following information:</p>
 
 <ul>
 	<li>Yellow: A screenshot is being written to the USB drive. (You likely just pressed the <em>Screenshot</em> button.)</li>
-	<li>Green: A MIDI note message was just received by ETC.</li>
+	<li>Green: When the LED flashes green, a MIDI message (such as a note or continuous controller message) was just received by ETC. When the light stays a solid green, a steady stream of MIDI messages (likely clock messages) is arriving at ETC.</li>
 	<li>Purple: A message was just received via the <code>Foot Switch</code> port.</li>
 </ul>
 
@@ -308,7 +235,7 @@ margin:-40px 0 0; /* negative fixed header height */
 
 <p><em>When you load a different <strong>scene</strong>, the current values of the foreground knobs are ignored in favor of the settings stored in the scene.</em> In other words, loading a scene will load the scene’s stored foreground control values into ETC, leaving no connection (for the moment) between the values currently used by the software engine and the physical position of the foreground control knobs.</p>
 
-<p>As we discussed in the concepts portion of chapter one, each scene is basically a snapshot of ETC’s current mode state. This includes the mode that is being used as well as the value of each of the foreground controls at the time the scene was captured. While turning the foreground knobs and switching between modes offers an “organic” experience, loading a scene is a relatively abrupt act, jumping directly to settings that were stored at another time, in another place. This is by design.</p>
+<p>As we discussed in the concepts portion of chapter one, each scene is basically a snapshot of ETC’s current mode state. This includes the mode that is being used as well as the value of each of the foreground controls at the time the scene was captured (and the values of the <em>Background Color</em> knob and the <em>Auto Clear Toggle</em> button). While turning the foreground knobs and switching between modes offers an “organic” experience, loading a scene is a relatively abrupt act, jumping directly to settings that were stored at another time, in another place. This is by design.</p>
 
 <p>Turning a foreground knob is always an absolute gesture: as soon as a change in the knob’s value is detected, it will be applied to ETC’s video engine. This holds true after a scene has been loaded. By turning a foreground knob, the new value there will take over, replacing the scene’s stored value and restoring the connection between the physical control and the software. Again, this may be an abrupt gesture at first —&nbsp;particularly if the stored value and the current knob position are on opposite sides of the control range. But once the knob is turned, all successive tweaks will create smooth value transitions.</p>
 
@@ -324,7 +251,7 @@ margin:-40px 0 0; /* negative fixed header height */
 
 <p><strong>The <em>Scene Selector</em> buttons</strong> are next. This pair of trigger buttons around the clapperboard icon allow you to step backward (left) or forward (right) through all stored scenes.</p>
 
-<p><strong>The <em>Scene Save</em> button</strong> follows the <em>Scene Selector</em> buttons. This trigger button with the floppy disk icon (remember those?) takes your current mode selection and the values of all four foreground controls and stores them to a new scene. This new scene is placed at the end of the scene list.</p>
+<p><strong>The <em>Scene Save</em> button</strong> follows the <em>Scene Selector</em> buttons. This trigger button with the floppy disk icon (remember those?) takes various performance values&nbsp;— your current mode selection, the values of all four foreground controls, the background color setting, and the state of the <em>Auto Clear Toggle</em> button — and stores them to a new scene. This new scene is placed at the end of the scene list.</p>
 
 <p><strong>The <em>Screenshot</em> button</strong> is a trigger with a camera icon. When pressed, the output of the current video mode is captured to a still image file on ETC’s USB drive. Screenshots created will not include the <em>On Screen Display</em>, even if this overlay is currently visible via the <code>HDMI Out</code> port.</p>
 
@@ -340,7 +267,7 @@ margin:-40px 0 0; /* negative fixed header height */
 
 <h2>The Ports</h2>
 
-<p>Most of the ports on the back of ETC has come up already in conversation, but we’ll take a moment to touch on each of them with any information relevant to this conversation of general functionality.</p>
+<p>Most of the ports are on the back of ETC, and many of them have already come up in our conversation, but we’ll take a moment to touch on each of them with any information relevant to this conversation of general functionality.</p>
 
 <p><strong>The <code>9VDC</code> power port</strong> is made for the power supply including with ETC. As with all Critter &amp; Guitari instruments, the power supply’s output specifications are as follows: 9VDC, 1000mA, and a tip with center-positive polarity. If you are uncertain whether a power supply will work with ETC, don’t plug it in to find out.</p>
 
@@ -352,7 +279,15 @@ margin:-40px 0 0; /* negative fixed header height */
 
 <p><strong>The <code>Audio In</code> port</strong> is a <code>-Mono-</code>(phonic) 1/4&quot; input for audio signal. This audio is made available to your modes in two ways. First, a list of the most recent 100 samples is always available for drawing purposes. And second, the incoming audio is continually assessed to determine if it exceeds a threshold level (roughly 80% of maximum possible amplitude), highly useful for commencing a function.</p>
 
-<p><strong>The <code>Foot Switch</code> port</strong> is a 1/4&quot; jack. It is intended to be connected to a keyboard sustain-/damper-style pedal, which will deliver on/off messages to the current mode. ETC assumes that any connected foot switch has a “normally closed position” (negative polarity). Expression-style pedals can be tried as well, but your results may vary.</p>
+<p><strong>The <code>Foot Switch</code> port</strong> is a 1/4&quot; jack. It is intended to be connected to a keyboard sustain-/damper-style pedal.</p>
+
+<p>If scenes are stored on your USB drive, an “on” message received at the <code>Foot Switch</code> port advances to the next stored scene. If no scenes are present on the USB drive, each message loads the next available mode instead. In both cases, this action “wraps around,” going from the last available scene/mode back to the first one, and so on.</p>
+
+<p>ETC assumes that any connected foot switch has a “normally closed position” (negative polarity).</p>
+
+<p>Finally, <strong>the two USB ports</strong> reside on the right side panel. We already mentioned the tiny USB drive that comes with ETC and must be connected for the device to properly boot up. For more information on working with the USB drive and its formatting, see chapter three.</p>
+
+<p>If you need more USB ports, you could connect a hub to one of these ports. That hub and any other devices you connect should be class compliant, meaning that is doesn’t require a special software driver to be installed. This will help to ensure compatibility with ETC.</p>
 
 <hr />
 
@@ -360,67 +295,153 @@ margin:-40px 0 0; /* negative fixed header height */
 
 <p>Note that we aren’t discussing how to produce certain types of images or effects. While the controls offered by ETC are always the same, each mode is unique its own right and can be used in ways that even we can’t imagine. Do consult the factory modes reference (URL) for a sense of the included options and their range. And if those provided options aren’t enough, then continue with us to the next chapter.</p>
 
-<p class="break"></p><br/>
 <h1>Chapter Three: Accessing ETC™ from Elsewhere</h1>
 
 <h3>Getting into and out of ETC.</h3>
 
+<p>First, we are glad you made it this far! And just in case you skipped straight to this chapter, be sure to go back and read chapter two! We are assuming that general operation of ETC is fairly clear at this point. So with that out of the way, let’s proceed.</p>
+
+<p>In this chapter, we are going outside of ETC itself to focus on how it interacts with the wider world. While ETC can be run successfully with its factory modes and its own on-board controls, you can definitely expand this performance device with new modes and/or additional sources of control. Here we will see ways to grow ETC’s range in each of these dimensions.</p>
+
+<p>We will start with some basics, looking at the folder structure used by ETC’s USB drive, where your modes and screenshots all live. If you want to load additional modes or simply download your screenshots, you will need to work with the USB drive (and your own computer) to place the new modes and their support files in the right place. Second, we will look at accessing the USB drive by connecting it to your computer. And finally, we’ll look at ETC’s MIDI implementation. This will be useful if you want to connect external MIDI — including USB MIDI —&nbsp;controllers to ETC, or even if you pair ETC with an external sequencer.</p>
+
+<p>If you are searching for additional modes of expression, you have come to the right place. Let’s make ETC that bigger boat…</p>
+
 <hr />
 
-<h2>Working with the USB Drive</h2>
+<h2>The USB Drive’s Folder Structure</h2>
 
-<p>The </p>
+<p>As has been mentioned, ETC will only properly work while a USB drive is attached to it. Modes are run directly from this attached USB drive. (While not mission-critical, scenes and screenshots are also stored to this drive.) This could be the flash drive included with ETC or another USB disk that is appropriately set up. Some rules apply:</p>
+
+<ul>
+	<li>This USB disk should be formatted with a FAT file system, often associated with MS-DOS.</li>
+	<li>This USB drive must contain a folder called <code>Modes</code> at its top-level. (This name is case-sensitive.) All modes to be loaded must live here, as detailed below.</li>
+	<li>The top-level of the USB drive may also contain a folder called <code>Grabs</code> for housing screenshots that are taken as well as a file called <code>Scenes.csv</code> for recording all scenes that are stored. If absent, these items will be created when needed.</li>
+</ul>
+
+<p>The following is an example directory listing of an ETC-ready USB drive. You can see four modes here, each with a required <code>main.py</code> file, as well as the <code>Grabs</code> folder and a <code>Scenes.csv</code> file. </p>
+
+<pre><code>Grabs\
+	0.jpg
+	1.jpg
+	2.jpg
+Modes\
+	bouncing-ball\
+		main.py
+	scope-connected-centered\
+		locomotion\
+			locomotion.py
+			locomotion.pyc
+		main.py
+		main.pyc
+	scope-image\
+		face.png
+		main.py
+		main.pyc
+	trig-slides-ag-p-rot-alpha\
+		cool\
+			arktika.png
+			organelle.png
+			scribble.png
+			smiley.png
+			tt.png
+			yugo2.png
+		main.py
+		main.pyc
+Scenes.csv
+</code></pre>
+
+<p>A couple items worth noting here about the modes:</p>
+
+<ul>
+	<li>In the four mode folders shown above, all of them have the required <code>main.py</code> file. As long as these Python script files contain the minimum requirements for an ETC mode, they will all be treated as valid modes and loaded when the device starts up. (For information on programming or editing modes, see chapter four.)</li>
+	<li>Three of these mode folders also include <code>main.pyc</code> files. These intermediary files are automatically created by the Python compiler in ETC. These files can speed up future interpretations of their script, but the PYC files are not required or needed. (The first mode listed here has no <code>main.pyc</code> file, suggesting that it is a new mode which has not yet been run by ETC.)</li>
+	<li>Other files necessary for your mode should also be included in the mode folder. This could include images, additional Python scripts, font files, or anything else that might make sense.</li>
+	<li>Also note that mode folders can also contain subfolders, which can be recognized by contained mode.</li>
+</ul>
+
+<hr />
+
+<h2>Taking the USB Drive to your Computer</h2>
+
+<p>Whether you want to load new modes, download some of your screenshots, or edit the <code>Scenes.csv</code> file or the modes themselves, any of these actions requires accessing the files on ETC’s USB drive. One way to do that is connecting the USB drive to a computer. We will discuss that here. (A second way to edit modes is with the USB <strong>Wi-Pi</strong> interface [a separate purchase] for wireless access. We will cover that in the chapter four.)</p>
+
+<p>If the USB drive is currently connected to ETC, you must first shut down the unit by holding the <em>Shutdown</em> button for a couple seconds. You will then see the <em>Status LED</em> turn pink while the system is shutting down, and then the LED will go dim. Only when the <em>Status LED</em> has gone out is it safe to disconnect the USB drive.</p>
+
+<p>When using the included USB drive, be sure it is flipped the right way before connecting to your computer. The drive that comes with ETC has an extremely low profile, consisting of the bottom half of most standard USB connectors/cables. As such, it is possible to plug the drive in upside down. This is generally harmless but is better avoided.<br/>Be sure that the exposed pins — I think of them as teeth —&nbsp;are facing “up,” toward wherever the top of a connected USB cable would go. (On Mac laptops, for example, the pins should face upward, toward the sky.)</p>
+
+<p>Once the drive is connected and seen by your computer, it would appear somewhat like the following.</p>
+
+<figure><img src="ETC_example_filestructure.png"/></figure>
+
+<p>The top level of my USB drive, whose disk name is <code>ETC</code>, is shown above. This root-level does indeed contain the <code>Grabs</code> folder, where three screenshots have been stored. Now would be a good time to move those images to your computer for your own use.</p>
+
+<p>A suggestion about screenshots. While you could copy files to your computer and leave them in place on the USB drive, a better practice is to regularly remove your screenshots from the USB drive. It is easy to run out of space on the USB drive by amassing screenshots, either slowly or quickly. Instead of running low on space without realizing it, just remove these images regularly.</p>
+
+<p>Also at the top level is the <code>Scenes.csv</code> file. This file of comma-separated values is readable if you open it in a text editor, with each line looking something like this:</p>
+
+<pre><code>bouncing-ball,0.0,0.2668621700879765,0.5141739980449658,0.7526881720430108,1.0,False
+</code></pre>
+
+<p>These values represent:</p>
+
+<pre><code>Mode, Foreground 1 Control knob, Foreground 2 Control knob, Foreground 3 Control knob, Foreground 4 Control knob, Background Color knob, Auto Clear Toggle button
+</code></pre>
+
+<p>If you are brave and interested, you could try editing these scenes values or simply reordering the lines. But you might want to make a local copy of the file first, just in case. (If things get out of hand, you can always just deleted the <code>Scenes.csv</code>. When a new file is needed, ETC will create it.)</p>
+
+<p>Inside of the top-level <code>Modes</code> folder, the four modes are selected (with blue coloration), and their contents are exposed. So in the example shown above, the four modes available on ETC would be <code>bouncing-ball</code>, <code>scope-connected-centered</code>, <code>scope-image</code>, and <code>trig-slides-ag-p-rot-alpha</code>.</p>
+
+<p>When working with these modes, you will most likely want to work with their folders rather than handling the files within each folder. For example:</p>
+
+<ul>
+	<li><em>If you want to add a new mode to ETC,</em> make sure to copy the full folder into the USB drive’s <code>Modes</code> folder. (And if you downloaded a ZIP file, make sure that you have decompressed it to a folder before moving it to ETC’s USB drive.)</li>
+	<li><em>If you want to back a mode up,</em> copy the folder over to your computer.</li>
+	<li><em>If you want to rename a mode,</em> rename the folder.</li>
+	<li><em>If you want to duplicate a mode and make changes to the new copy,</em> duplicate the folder and name the copy something different.</li>
+	<li><em>If you want to delete a mode,</em> make sure to delete the entire mode folder.</li>
+</ul>
+
+<p>In short, if you aren’t editing the files themselves, then working with the files within the mode’s folder can only cause problems.</p>
+
+<p>Finally, note that any other folders or files located on the USB drive will likely be ignored by ETC. This means you could keep a backup folder of working modes on the USB drive while editing the “live” versions. Or this could be handy for having different “set lists” of modes or even different scene files. The set list idea would be to duplicate either your <code>Modes</code> folder or <code>Scenes.csv</code> file, and then rename the version that you would like to save for future use. Just make sure that the proper files and folders have the proper names before you hit the stage!</p>
 
 <hr />
 
 <h2>ETC’s MIDI Configuration</h2>
 
-<p>As ETC’s <code>MIDI  In</code> port suggests, external MIDI controllers can be connected to it. To properly interact with ETC, we need to know the MIDI implementation of this device. </p>
+<p>As ETC’s <code>MIDI In</code> port suggests, external MIDI controllers can be connected to it. In addition to devices connect by regular(/old-fashioned) five-pin DIN connectors, USB MIDI devices can also be used with ETC. To ensure compatibility, we suggest that you select a class compliant USB MIDI controller. Any controller that requires the installation of a driver may, at best, not work as expected.</p>
+
+<p>To properly interact with ETC, we need to know the MIDI implementation of this device. To begin with, ETC only listens to incoming MIDI messages that are on channel one. And only a small subset of MIDI messages has an actual effect on ETC’s operating modes.</p>
+
+<p>In other words, your controller may send some messages that ETC doesn’t recognize, and that’s okay. These messages won’t produce any effect on ETC, but they won’t create any problems either so don’t worry with “disabling active sensing,” etc. etc.</p>
+
+<p>Having said that only messages on channel one are recognized, let’s look at the different type of messages that ETC uses.</p>
+
+<h4>Control Change Messages</h4>
+
+<h4>Program Change Messages</h4>
+
+<h4>Note Messages</h4>
+
+<h4>MIDI Global Messages</h4>
+
+<h1>Chapter Four: Programming For ETC™, and Wi-Pi™ Access</h1>
+
+<h3>For those fearlessly wielding a text editor.</h3>
+
+<p>The second method is the optional USB Wi-Fi interface. This <a href="https://www.critterandguitari.com/collections/accessories">additional purchase</a> allows you to keep ETC connected, running, and generating visuals while you access it from your computer, making it possible to access ETC and edits its modes while seeing the results in real time.</p>
 
 <hr />
 
-<h2>Accessing ETC via USB Wi-Fi</h2>
+<h2>How Mode Scripts Work</h2>
 
+<hr />
 
+<h2>ETC’s API</h2>
 
-    </div>
-  </div>
+<hr />
 
+<h2>Wirelessly Programming via Wi-Pi</h2>
 
-  <footer>  
-    <div class="w3-container w3-theme-l1">
-      <p>ETC Manual &copy; 2017 Critter &amp; Guitari</p>
-    </div>
-  </footer>
-
-<!-- END MAIN -->
-</div>
-
-<script>
-// Get the Sidenav
-var mySidenav = document.getElementById("mySidenav");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidenav, and add overlay effect
-function w3_open() {
-    if (mySidenav.style.display === 'block') {
-        mySidenav.style.display = 'none';
-        overlayBg.style.display = "none";
-    } else {
-        mySidenav.style.display = 'block';
-        overlayBg.style.display = "block";
-    }
-}
-
-// Close the sidenav with the close button
-function w3_close() {
-    mySidenav.style.display = "none";
-    overlayBg.style.display = "none";
-}
-</script>
-
-</body>
-</html>
 
