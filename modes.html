@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+<script src="jquery.toc.js" type="text/javascript"></script>
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {padding: 12px;}
+.w3-bar a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+:target:before {
+content:"";
+display:block;
+height:40px; /* fixed header height*/
+margin:-40px 0 0; /* negative fixed header height */
+}
+
+.break {page-break-before: always;}
+
+.table {
+    border: 1px solid;
+}
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-opennav w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">ETC Manual</a>
+    <a href="modes.html" class="w3-bar-item w3-button w3-theme-l1">ETC Modes</a>
+  </div>
+</div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+<div class="w3-main">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-container">
+
+
+
+
+
+<table><tr><td>0 - Sound & MIDI Evaluation</td><td>Example mode that shows how sound & MIDI inputs work</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td><img src="ETC_Modes/0 - Sound & MIDI Evaluation/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Aquarium</td><td>Scope-Fish swim by</td><td>Number of Fish</td><td>Speed</td><td>Segment Width</td><td>Color</td><td><img src="ETC_Modes/S - Aquarium/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Bits Horizontal</td><td>Randomly placed horizontal scope-lines</td><td>Number of Bits</td><td>Size</td><td>Angle</td><td>Color</td><td><img src="ETC_Modes/S - Bits Horizontal/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Bits Vertical</td><td>Randomly placed vertical scope-lines</td><td>Number of Bits</td><td>Size</td><td>Angle</td><td>Color</td><td><img src="ETC_Modes/S - Bits Vertical/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Center Diamond</td><td>Four lines make a center diamond</td><td>Line Width</td><td>Shadow Distance</td><td>Shadow Angle</td><td>Color</td><td><img src="ETC_Modes/S - Center Diamond/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Circle Row</td><td>Sound amplitude controls diameter of circles</td><td>Number of Circles</td><td>Diameter</td><td>Y Position</td><td>Color</td><td><img src="ETC_Modes/S - Circle Row/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Circle Scope Connected</td><td>Oscilloscope in circle form</td><td>Circles diameter</td><td>Scale</td><td>Line Width</td><td>Color</td><td><img src="ETC_Modes/S - Circle Scope Connected/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Circle Scope Offset</td><td>Oscilloscope in circle form with offset</td><td>Circles Diameter</td><td>Line Width</td><td>Offset</td><td>Color</td><td><img src="ETC_Modes/S - Circle Scope Offset/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Circular Trigon Field</td><td>Triangles arranged in a circle</td><td>Field Size</td><td>Triangle Skew Right</td><td>Triangle Skew Left</td><td>Color</td><td><img src="ETC_Modes/S - Circular Trigon Field/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Classic Horizontal</td><td>Row of lines and circles</td><td>Y Position</td><td>Line Width</td><td>Circle Diameter</td><td>Color</td><td><img src="ETC_Modes/S - Classic Horizontal/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Classic Vertical</td><td>Vertical line oscilloscope</td><td>X Position</td><td>Line Width</td><td>Circle Diameter</td><td>Color</td><td><img src="ETC_Modes/S - Classic Vertical/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Concentric</td><td>Positionable circle with audio level controlled diameter</td><td>X Position</td><td>Y Position</td><td>Diameter</td><td>Color</td><td><img src="ETC_Modes/S - Concentric/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Cone Scope</td><td>Line oscilloscope with angle</td><td>X Position</td><td>Angle</td><td>Line Width</td><td>Color</td><td><img src="ETC_Modes/S - Cone Scope/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Connected Scope</td><td>Line oscilloscope with circles and random bits</td><td>Line Width</td><td>Circle Diameter</td><td>Random Bits Amount</td><td>Color</td><td><img src="ETC_Modes/S - Connected Scope/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Feynman</td><td>Line oscilloscope in the shape of a Feynman diagram</td><td>Line Width</td><td>Background Shape Control</td><td>Background Shape Angle</td><td>Color</td><td><img src="ETC_Modes/S - Feynman/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Football Scope</td><td>Oscilloscope with interfering lines</td><td>X Position</td><td>Y Position</td><td>Circle Diameter</td><td>Color</td><td><img src="ETC_Modes/S - Football Scope/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Grid Circles</td><td>Grid of circles move with audio level</td><td>X Offset</td><td>Y Offset</td><td>Circle Diameter</td><td>Color</td><td><img src="ETC_Modes/S - Grid Circles/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Grid Circles - Filled</td><td>Grid of filled circles move with audio level</td><td>X Offset</td><td>Y Offset</td><td>Circle Diameter</td><td>Color</td><td><img src="ETC_Modes/S - Grid Circles - Filled/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Grid Polygons Zoom</td><td>Randomly generated polygons</td><td>X Offset</td><td>Y Offset</td><td>Size</td><td>Color</td><td><img src="ETC_Modes/S - Grid Polygons Zoom/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Grid Random Polygons</td><td>Grid of polygons with random shapes</td><td>X Offset</td><td>Y Offset</td><td>Size</td><td>Color</td><td><img src="ETC_Modes/S - Grid Random Polygons/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Grid Random Polygons - Filled</td><td>Grid of filled polygons with random shapes</td><td>X Offset</td><td>Y Offset</td><td>Size</td><td>Color</td><td><img src="ETC_Modes/S - Grid Random Polygons - Filled/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Grid Squares</td><td>Grid of oscillating squares</td><td>X Offset</td><td>Y Offset</td><td>Size</td><td>Color</td><td><img src="ETC_Modes/S - Grid Squares/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Grid Squares - Filled</td><td>Grid of filled oscillating squares</td><td>X Offset</td><td>Y Offset</td><td>Size</td><td>Color</td><td><img src="ETC_Modes/S - Grid Squares - Filled/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Grid Triangles</td><td>Grid of oscillating Triangles</td><td>X Offset</td><td>Y Offset</td><td>Size</td><td>Color</td><td><img src="ETC_Modes/S - Grid Triangles/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Grid Triangles - Filled</td><td>Grid of filled oscillating triangles</td><td>X Offset</td><td>Y Offset</td><td>Size</td><td>Color</td><td><img src="ETC_Modes/S - Grid Triangles - Filled/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Interfering Lines</td><td>Oscilloscope lines overlap</td><td>Number of Lines</td><td>Outer Spread</td><td>Center Spread</td><td>Color</td><td><img src="ETC_Modes/S - Interfering Lines/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Lines Diagonal</td><td>Three diagonal oscilloscope lines</td><td>Line Width</td><td>Shadow Distance</td><td>Shadow Angle</td><td>Color</td><td><img src="ETC_Modes/S - Lines Diagonal/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Mirror Grid</td><td>Horizontal lines with oscilloscope vertical lines</td><td>Line Width</td><td>Grid Size</td><td>Square Tip Size</td><td>Color</td><td><img src="ETC_Modes/S - Mirror Grid/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Mirror Grid Inverse</td><td>Horizontal lines with oscilloscope vertical lines</td><td>Line Width</td><td>Grid Size</td><td>Square Tip Size</td><td>Color</td><td><img src="ETC_Modes/S - Mirror Grid Inverse/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - One Line Spins</td><td>Line rotating from center</td><td>Rotation Speed</td><td>Length</td><td>Width</td><td>Color</td><td><img src="ETC_Modes/S - One Line Spins/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - One Pixel Windows</td><td>Tricolor oscilloscope line rows</td><td>Aberration</td><td>Y Position</td><td>Vertical Spread</td><td>Color</td><td><img src="ETC_Modes/S - One Pixel Windows/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Perspective Lines</td><td>Oscilloscope with connected lines</td><td>X position</td><td>Y position</td><td>Line Width</td><td>Color</td><td><img src="ETC_Modes/S - Perspective Lines/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Radial Scope</td><td>Lines and circles radiate from center</td><td>Line Width</td><td>Line Length</td><td>Circle Diameter</td><td>Color</td><td><img src="ETC_Modes/S - Radial Scope/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Sound Jaws</td><td>Oscilloscope teeth</td><td>Clench</td><td>Number of Teeth</td><td>Tooth Shape</td><td>Color</td><td><img src="ETC_Modes/S - Sound Jaws/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Square Shadows</td><td>Oscilloscope squares with shadows</td><td>Square Size</td><td>X Position</td><td>Shadow Scale</td><td>Color</td><td><img src="ETC_Modes/S - Square Shadows/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Tall Towers</td><td>Volume-scale shapes make a tower</td><td>Circle Diameter</td><td>X Position</td><td>Tower Size</td><td>Color</td><td><img src="ETC_Modes/S - Tall Towers/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Three Scopes</td><td>Three line oscilloscopes</td><td>Angle</td><td>Y Position</td><td>Line Width</td><td>Color</td><td><img src="ETC_Modes/S - Three Scopes/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Triangle Row</td><td>Row of Triangles change height with amplitude</td><td>Number of Triangles</td><td>Angle</td><td>Y Position</td><td>Color</td><td><img src="ETC_Modes/S - Triangle Row/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Two Scopes</td><td>Two vertical line-oscilloscopes</td><td>X Position A</td><td>X Position B</td><td>Line Width</td><td>Color</td><td><img src="ETC_Modes/S - Two Scopes/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - X Scope</td><td>X line-oscilloscope</td><td>Line Width</td><td>Shadow Distance</td><td>Shadow Angle</td><td>Color</td><td><img src="ETC_Modes/S - X Scope/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>S - Zoom Scope</td><td>Line-and-circle-oscilloscope</td><td>Horizontal spread</td><td>Y Position</td><td>X Position</td><td>Color</td><td><img src="ETC_Modes/S - Zoom Scope/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Ball of Mirrors</td><td>Recursive image on trigger</td><td>X Position</td><td>Y Position</td><td>Width</td><td>Height</td><td><img src="ETC_Modes/T - Ball of Mirrors/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Bezier Cousins</td><td>Trigger random bezier shapes</td><td>Number of Points</td><td>Number of Offset Cousins</td><td>Offset Distance</td><td>Color</td><td><img src="ETC_Modes/T - Bezier Cousins/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Bits H</td><td>Randomly generate horizontal lines</td><td>Amount</td><td>Length</td><td>Shadow Opacity</td><td>Color</td><td><img src="ETC_Modes/T - Bits H/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Bits V</td><td>Randomly generate horizontal lines</td><td>Amount</td><td>Length</td><td>Shadow Opacity</td><td>Color</td><td><img src="ETC_Modes/T - Bits V/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Density Cloud</td><td>Trigger randomly placed circles</td><td>Circle Diameter</td><td>Number of Circles</td><td>Density</td><td>Color</td><td><img src="ETC_Modes/T - Density Cloud/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Density Squares</td><td>Trigger randomly placed squares</td><td>Square Size</td><td>Density</td><td>Line Width</td><td>Color</td><td><img src="ETC_Modes/T - Density Squares/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Draws Hashmarks</td><td>Random vertical lines on horizontal lines</td><td>Number of Horizontal Lines</td><td>Line Width</td><td>Number of Vertical Lines</td><td>Color</td><td><img src="ETC_Modes/T - Draws Hashmarks/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Font Patterns</td><td>Trigger random symbols in grid</td><td>X Offset</td><td>Size</td><td>Font Family</td><td>Color</td><td><img src="ETC_Modes/T - Font Patterns/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Font Recedes</td><td>Trigger random symbols that recede</td><td>Fade-to-black Time</td><td>Initial Size</td><td>Recession Speed</td><td>Color</td><td><img src="ETC_Modes/T - Font Recedes/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Fonts Grid</td><td>Trigger random symbols in a grid</td><td>Font Size</td><td>Line Width</td><td>Font Family</td><td>Color</td><td><img src="ETC_Modes/T - Fonts Grid/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Holzer Scroll</td><td>Trigger random sentence</td><td>Font Size</td><td>Y Position</td><td>Scroll Speed</td><td>Color</td><td><img src="ETC_Modes/T - Holzer Scroll/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Line Rotate</td><td>Line rotates on trigger</td><td>Line Width</td><td>Line Length</td><td>Rotation Amount</td><td>Color</td><td><img src="ETC_Modes/T - Line Rotate/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Origami Triangles</td><td>Randomly-placed, chained triangles</td><td>X Position</td><td>Y Position</td><td>Size</td><td>Color</td><td><img src="ETC_Modes/T - Origami Triangles/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Pie Plates</td><td>Triggers randomly placed fan shapes</td><td>Diameter</td><td>Number of lines</td><td>Offset Amount</td><td>Color</td><td><img src="ETC_Modes/T - Pie Plates/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Reckie</td><td>Chained, random squares/crosses</td><td>Width</td><td>Height</td><td>Shape</td><td>Color</td><td><img src="ETC_Modes/T - Reckie/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Rotation Grids</td><td>Three intersecting grids with trigger rotation</td><td>Line Width</td><td>Line Length</td><td>Rotation Amount</td><td>Color</td><td><img src="ETC_Modes/T - Rotation Grids/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Spanish Flash Cards</td><td>Trigger Spanish vocab quiz</td><td>Size</td><td>X Position</td><td>Y Position</td><td>Color</td><td><img src="ETC_Modes/T - Spanish Flash Cards/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Triangle Rotate</td><td>Rotate triangle with trigger</td><td>X Position</td><td>Y Position</td><td>Opacity</td><td>Color</td><td><img src="ETC_Modes/T - Triangle Rotate/preview.jpg" style="width:128px;height:72px;"></td></tr>
+<tr><td>T - Word Bounce</td><td>Word bounces on edges and changes</td><td>X Speed</td><td>Y Speed</td><td>Size</td><td>Color</td><td><img src="ETC_Modes/T - Word Bounce/preview.jpg" style="width:128px;height:72px;"></td></tr>
+</table>
+
+
+
+
+    </div>
+  </div>
+
+
+  <footer>  
+    <div class="w3-container w3-theme-l1">
+      <p>ETC Manual &copy; 2017 Critter &amp; Guitari</p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidenav
+var mySidenav = document.getElementById("mySidenav");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidenav, and add overlay effect
+function w3_open() {
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidenav.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidenav with the close button
+function w3_close() {
+    mySidenav.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
