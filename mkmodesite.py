@@ -20,7 +20,7 @@ for mode_folder in mode_folders :
         info = imp.load_source('info', mode_info_path)
         
         out += "<td>" + str(mode_folder) + "</td>"
-        out += "<td>" + str(info.description) + "</td>"
+#        out += "<td>" + str(info.description) + "</td>"
         out += "<td>" + str(info.knob1) + "</td>"
         out += "<td>" + str(info.knob2) + "</td>"
         out += "<td>" + str(info.knob3) + "</td>"
