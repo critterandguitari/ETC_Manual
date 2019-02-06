@@ -265,8 +265,7 @@ indicating the following hardware state:
 -   Light blue: ETC is currently starting up. (It has probably just
     received power.)
 -   Red: ETC encountered an error while starting up. If you consistently
-    receive this message, either consult our [FAQ
-    page](https://www.critterandguitari.com/pages/FAQ) or [contact
+    receive this message, either consult our [forum](https://forum.critterandguitari.com/) or [contact
     us](https://www.critterandguitari.com/pages/contact-us)!
 -   White: ETC is currently running normally.
 -   Pink: ETC is in the process of shutting down. (You likely just
@@ -305,7 +304,7 @@ Information is displayed in two columns. On the left side are:
 The right column includes:
 
 -   Thumbnails of the several most recent screen grabs.
--   ETC’s current IP address, in case the USB Wi-Fi dongle is in use.
+-   ETC’s current IP address, in case the USB WiFi dongle is in use.
     (For more information, see chapter four.)
 -   How much of ETC’s memory (RAM) is currently being used.
 -   Any connected and recognized USB MIDI devices (if applicable).
@@ -515,7 +514,7 @@ come up in our conversation, but we’ll take a moment to touch on each of
 them with any information relevant to this conversation of general
 functionality.
 
-**The `9VDC` power port** is made for the power supply including with
+**The `9VDC` power port** is made for the power supply included with
 ETC. As with all Critter & Guitari instruments, the power supply’s
 output specifications are as follows: 9VDC, 1000mA, and a tip with
 center-positive polarity. If you are uncertain whether a power supply
@@ -539,7 +538,7 @@ determine if it exceeds a threshold level (roughly 80% of maximum
 possible amplitude), highly useful for commencing a function.
 
 **The `Foot Switch` port** is a 1/4" jack. It is intended to be
-connected to a keyboard sustain-/damper-style pedal.
+connected to a keyboard sustain/damper-style pedal.
 
 If scenes are stored on your USB drive, an “on” message received at the
 `Foot Switch` port advances to the next stored scene. If no scenes are
@@ -557,14 +556,14 @@ working with the USB drive and its formatting, see chapter three.
 
 If you need more USB ports, you could connect a hub to one of these
 ports. That hub and any other devices you connect should be class
-compliant, meaning that is doesn’t require a special software driver to
+compliant, meaning that it doesn’t require a special software driver to
 be installed. This will help to ensure compatibility with ETC.
 
 
 An Epilogue on Basic Controls
 
 Note that we aren’t discussing how to produce certain types of images or
-effects. While the controls offered by ETC are always the same, each
+effects. While the controls offered by ETC are generally similar, each
 mode is unique its own right and can be used in ways that even we can’t
 imagine. Do consult the [factory modes
 reference](factory-modes-reference.html) for a sense of the included
@@ -672,9 +671,9 @@ Taking the USB Drive to your Computer
 Whether you want to load new modes, download some of your screenshots,
 or edit the `Scenes.csv` file or the modes themselves, any of these
 actions requires accessing the files on ETC’s USB drive. One way to do
-that is connecting the USB drive to a computer. We will discuss that
-here. (A second way to edit modes is with the *USB Wi-Fi interface* \[a
-separate purchase\] for wireless access. We will cover that in the
+that is to connect the USB drive to a computer. We will discuss that
+here. (A second way to edit modes is with the *USB WiFi interface* \[a
+separate purchase\] for wireless access. We will cover that in
 chapter four.)
 
 If the USB drive is currently connected to ETC, you must first shut down
@@ -684,13 +683,9 @@ and then the LED will go dim. Only when the *Status LED* has gone out is
 it safe to disconnect the USB drive.
 
 When using the included USB drive, be sure it is flipped the right way
-before connecting to your computer. The drive that comes with ETC has an
-extremely low profile, consisting of the bottom half of most standard
-USB connectors/cables. As such, it is possible to plug the drive in
-upside down. This is generally harmless but is better avoided.\
-Be sure that the exposed pins — I think of them as teeth — are facing
-“up,” toward wherever the top of a connected USB cable would go. (On Mac
-laptops, for example, the pins should face upward, toward the sky.)
+before connecting to your computer. 
+
+It is possible to plug the drive in upside down. This is better avoided. When using the drive on ETC, be sure that the side with two holes (the top of the drive) is facing down. (On Mac laptops, for example, these holes should face upward, toward the sky.)
 
 Once the drive is connected and seen by your computer, it would appear
 somewhat like the following.
@@ -702,9 +697,9 @@ This root-level does indeed contain the `Grabs` folder, where three
 screenshots have been stored. Now would be a good time to move those
 images to your computer for your own use.
 
-A suggestion about screenshots. While you could copy files to your
+A suggestion about screenshots: While you could copy files to your
 computer and leave them in place on the USB drive, a better practice is
-to regularly remove your screenshots from the USB drive. It is easy to
+to regularly remove your screenshots from the USB drive. It is possible to
 run out of space on the USB drive by amassing screenshots, either slowly
 or quickly. Instead of running low on space without realizing it, just
 remove these images regularly.
@@ -717,12 +712,13 @@ each line looking something like this:
 
 These values represent:
 
-    Mode, Foreground 1 Control knob, Foreground 2 Control knob, Foreground 3 Control knob, Foreground 4 Control knob, Background Color knob, Auto Clear Toggle button
+    Mode, Foreground 1 Control knob, Foreground 2 Control knob, Foreground 3 Control knob, 
+    Foreground 4 Control knob, Background Color knob, Auto Clear Toggle button
 
 If you are brave and interested, you could try editing these scenes
 values or simply reordering the lines. But you might want to make a
 local copy of the file first, just in case. (If things get out of hand,
-you can always just deleted the `Scenes.csv`. When a new file is needed,
+you can always just delete the `Scenes.csv`. When a new file is needed,
 ETC will create it.)
 
 Inside of the top-level `Modes` folder, the four modes are selected
@@ -762,11 +758,11 @@ that you would like to save for future use. Just make sure that the
 proper files and folders have the proper names before you hit the stage!
 
 
-ETC’s MIDI Configuration
+### ETC’s MIDI Configuration
 
 As ETC’s `MIDI In` port suggests, external MIDI controllers can be
 connected to it. In addition to devices connect by
-regular(/old-fashioned) five-pin DIN connectors, USB MIDI devices can
+regular (old-fashioned) five-pin DIN connectors, USB MIDI devices can
 also be used with ETC. To ensure compatibility, we suggest that you
 select a class compliant USB MIDI controller. Any controller that
 requires the installation of a driver may, at best, not work as
@@ -871,7 +867,7 @@ channels will be ignored.
 
 Setting the contents of the text file to `0` (the number zero) will
 switch ETC to a kind of omni mode, telling the device to ignore the MIDI
-channel of incoming message and to respond to everything it receives. As
+channel of incoming messages and to respond to everything it receives. As
 an example, this might be preferable if you are using a MIDI controller
 that has both keys and/or knobs (typically transmitted on channel 1) and
 drum pads (often sent on channel 10).
@@ -879,7 +875,7 @@ drum pads (often sent on channel 10).
 Finally, if this `MIDI-Channel.txt` file is deleted or not readable, ETC
 will default to MIDI channel 1 when it boots up.
 
-# Chapter Four: Programming For ETC™, and Access via Wi-Fi
+# Chapter Four: Programming For ETC™, and Access via WiFi
 
 ### For those with a text editor and a dream.
 
@@ -894,7 +890,7 @@ back, we will be here. Waiting.
 
 And while this chapter focuses on how ETC works and the methods
 available to you within this framework, we are not going to teach you
-how to code. We don’t have enough pages or Red Bull to do that here. But
+how to code. We don’t have enough pages or Club Mate to do that here. But
 don’t despair. Now more than ever, there is a bounty of resources
 available that will help you learn about programming in general and
 about particular languages (such as **Python**). Searching the internet,
@@ -912,14 +908,14 @@ We will then outline ETC’s application program interface (API). Beyond
 the required pieces, these are the available functions and properties
 that you can make use of in any mode. Finally, we will look at
 connecting to ETC for the purpose of editing modes directly while the
-device is running. This can be done via the optional USB Wi-Fi
+device is running. This can be done via the optional USB WiFi
 interface, which is an additional purchase.
 
 So this is the road before us. We have already seen how ETC handles; now
-let’s change the oil and what make him purr…
+let’s change the oil and make her purr…
 
 
-How Mode Scripts Work
+### How Mode Scripts Work
 
 A word or two on how ETC actually does its work will go a long way. We
 will spend a moment on the languages at play and the system behavior of
@@ -1160,7 +1156,7 @@ come across some happy accidents as you go. As always, it’s along the
 way that art gets made.
 
 
-Wirelessly Programming with the USB Wi-Fi Interface
+Wirelessly Programming with the USB WiFi Interface
 
 In chapter three, we looked at the format of the USB drive as well as
 how to add new modes and work with files and folders by connecting the
@@ -1176,17 +1172,17 @@ This could be a pain for creating new modes from scratch, much less for
 fine tuning a few settings. So we’ve come up with a more convenient
 workflow for all of us.
 
-#### Readying the USB Wi-Fi Interface
+#### Readying the USB WiFi Interface
 
 To let you keep ETC running *and* allow you to edit its primary scripts
 (the `main.py` files of each mode), we have made ETC ready to work with
-the *USB Wi-Fi interface*, which is available as an [additional
+the *USB WiFi interface*, which is available as an [additional
 purchase](https://www.critterandguitari.com/collections/accessories).
 
-Using the *USB Wi-Fi interface* with ETC requires just a little
+Using the *USB WiFi interface* with ETC requires just a little
 configuration. You need to create a file named `WiFi.sh` and place it at
 the root level of the USB drive. This shell script will prompt ETC to
-create its own ad hoc Wi-Fi network with a network name and password of
+create its own ad hoc WiFi network with a network name and password of
 your choosing. A template version of the file would look like this…
 
     #!/bin/bash
@@ -1207,16 +1203,16 @@ text editor, please take the following actions:
     end of the filename, such as `.txt`.) Make sure that a copy of this
     file is saved to the top level of ETC’s USB drive.
 4.  Reattach the USB drive to one of ETC’s USB ports, attach the *USB
-    Wi-Fi interface* to the other USB port, and power up ETC.
+    WiFi interface* to the other USB port, and power up ETC.
 
 Once ETC has booted up, you should be able to find and connect to ETC’s
-Wi-Fi network just as you would any other network. In the example below,
+WiFi network just as you would any other network. In the example below,
 I have named ETC’s network `ETCETC`.
 
-![](ETCETC-Wi-Fi-1.png)
+![](ETCETC-WiFi-1.png)
 
-Note that if you are connecting to the internet via Wi-Fi, switching
-over to ETC’s Wi-Fi network will also take you “offline.” This would
+Note that if you are connecting to the internet via WiFi, switching
+over to ETC’s WiFi network will also take you “offline.” This would
 limit your access to wholesome online resources, such as this manual and
 the Critter & Guitari site in general. If possible, connecting to the
 internet by other means (such as an ethernet cable or Bluetooth) could
@@ -1224,7 +1220,7 @@ allow you to stay online while connected to ETC.
 
 #### Using ETC’s web console
 
-Once you are connected to ETC’s Wi-Fi network, open your web browser and
+Once you are connected to ETC’s WiFi network, open your web browser and
 visit <http://192.168.12.1:8080/static/index.html>.
 
 ![](1-Web-panel-start.png)
@@ -1279,7 +1275,7 @@ functions must still be done by connecting the USB stick to your
 computer (see chapter three), the web console allows you both to quickly
 sample all of the screenshots you have taken and to program on the fly,
 seeing the results as you go. If you plan on doing your own tweaks
-and/or programming with ETC, you may want to consider the *USB Wi-Fi
+and/or programming with ETC, you may want to consider the *USB WiFi
 interface* as [a small
 cost](https://www.critterandguitari.com/collections/accessories)
 yielding a large convenience.
