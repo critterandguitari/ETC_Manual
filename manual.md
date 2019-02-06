@@ -11,7 +11,7 @@ friends)! Time is money so let’s get you up and running…
 Along with this card, there are two main items in the box you just
 opened.
 
--   **Your ETC.** Also note that a tiny white USB drive is also plugged
+-   **Your ETC.** Also note that a tiny USB drive is also plugged
     in on the right side of the unit. This drive holds the modes that
     ETC will use to paint its pictures.
 -   **Its power adapter.** While the power supply has prongs for
@@ -167,7 +167,7 @@ falling into two broad categories:
     button to generate a trigger too.
 
 To make things easy to read, a factory mode whose name start with `S - `
-is scope mode, and one beginning with `T - ` is a trigger mode. But as
+is a scope mode, and one beginning with `T - ` is a trigger mode. But as
 the descriptions above suggest, there is plenty of wiggle room as modes
 can readily blend these ideas or go off in completely new directions.
 Thinking in the scope/trigger paradigm to start is a good way to both
@@ -239,7 +239,7 @@ as they fly through the air…
 
 ## Row 1: Systemic Controls
 
-![](ETC-row-1.jpg)
+![](ETC-row-1.png)
 
 The top row of ETC has a number of system-level controls and the only
 direct feedback element that faces the user. We will take these items
@@ -289,7 +289,7 @@ the following information:
 **The *On Screen Display* button** is a toggle that calls up an overlay
 of current system information.
 
-(SCREENSHOT: On Screen Display)
+![](OSDscreenshot.png)
 
 Information is displayed in two columns. On the left side are:
 
@@ -337,7 +337,7 @@ you are connecting and the mode you are using. For example:
 
 ## Row 2: Background Controls
 
-![](ETC-row-2.jpg)
+![](ETC-row-2.png)
 
 While the second row is the most sparsely populated, its two controls
 are really the glue that hold transitions together for ETC. These
@@ -374,7 +374,7 @@ clearing behavior, the set background color will be applied again.
 
 Row 3: Foreground Controls
 
-![](ETC-row-3.jpg)
+![](ETC-row-3.png)
 
 The third row consists of four numbered knobs. Formally, we could call
 them *Foreground 1 Control* knob,*Foreground 2 Control* knob, etc. Or we
@@ -443,7 +443,7 @@ new scenes), well it’s funny that you ask…
 
 Row 4: Functional Controls
 
-![](ETC-row-4.jpg)
+![](ETC-row-4.png)
 
 The top bottom of ETC has a number of navigation and action-based
 options, all in the form of tasteful maple buttons. We will look at each
