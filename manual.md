@@ -1036,44 +1036,47 @@ own modes. Our only suggestion is an obvious one: you should probably
 send different images out of ETC from time to time.
 
 
-ETC’s API
+#### ETC’s API
 
-Having walked through the general framework and requirements of ETC’s
-modes, it’s time to take a look at the API available when working with
-ETC. The `etc` object contains a number of variables, all of which can
-be accessed from any mode:
+Having walked through the general framework and requirements of ETC’s modes, it’s time to take a look at the API (application programming interface) available when working with ETC. The `etc` object contains a number of variables, all of which can be accessed from any mode:
 
 -   `etc.audio_in` - A *list* of the 100 most recent audio levels
     registered by ETC. These values are stored as 16-bit, signed
     integers, ranging from a minimum of -32,768 to a maximum of
-    +32,767.\
+    +32,767. 
+    
     Additionally, depressing the *Trigger* button populates this list
     with a sine wave, simulating audio input to ETC.
 -   `etc.audio_trig` - A *boolean* value indicating whether or not
     incoming audio has exceeded the fixed threshold level (approximately
     80% of maximum) since the last frame was drawn via the
-    `draw()`function.\
+    `draw()`function.
+    
     Additionally, depressing the *Trigger* button sets `etc.audio_trig`
     to `true`.
 -   `etc.bg_color` - A *tuple* of three integers representing the red,
     green, and blue components of the current background color.
 -   `etc.knob1` - A *float* representing the current value of the
-    *Foreground 1 Control* knob.\
+    *Foreground 1 Control* knob.
+    
     Additionally, an incoming MIDI control change message of number `21`
     on the current global MIDI channel will replace the value of
     foreground knob 1, until the knob is moved again.
 -   `etc.knob2` - A *float* representing the current value of the
-    *Foreground 2 Control* knob.\
+    *Foreground 2 Control* knob.
+    
     Additionally, an incoming MIDI control change message of number `22`
     on the current global MIDI channel will replace the value of
     foreground knob 2, until the knob is moved again.
 -   `etc.knob3` - A *float* representing the current value of the
-    *Foreground 3 Control* knob.\
+    *Foreground 3 Control* knob.
+    
     Additionally, an incoming MIDI control change message of number `23`
     on the current global MIDI channel will replace the value of
     foreground knob 3, until the knob is moved again.
 -   `etc.knob4` - A *float* representing the current value of the
-    *Foreground 4 Control* knob.\
+    *Foreground 4 Control* knob.
+    
     Additionally, an incoming MIDI control change message of number `24`
     on the current global MIDI channel will replace the value of
     foreground knob 4, until the knob is moved again.
