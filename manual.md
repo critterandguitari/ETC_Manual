@@ -97,7 +97,7 @@ even wire up a MIDI controller to the `MIDI In` port, etc.
 Yes! If audio is running into ETC, a couple of knob tweaks should get
 you a steady stream of responsive visuals.
 
-#### Can I control the ETC with MIDI?
+#### Can I control ETC with MIDI?
 
 Yes! Do you use a digital audio workstation (DAW) or performance
 software, like **Ableton Live**? Gib mir fünf! You can send MIDI to ETC
@@ -371,7 +371,7 @@ never getting painted. When the button is toggled back to normal
 clearing behavior, the set background color will be applied again.
 
 
-Row 3: Foreground Controls
+## Row 3: Foreground Controls
 
 ![](ETC-row-3.png)
 
@@ -440,7 +440,7 @@ And as for how to switch between different modes and scenes (and store
 new scenes), well it’s funny that you ask…
 
 
-Row 4: Functional Controls
+## Row 4: Functional Controls
 
 ![](ETC-row-4.png)
 
@@ -505,7 +505,7 @@ to supplement incoming audio signals so do try it with all kinds of
 modes.
 
 
-The Ports
+### The Ports
 
 ![](ETC-Jacks.jpg)
 
@@ -560,7 +560,7 @@ compliant, meaning that it doesn’t require a special software driver to
 be installed. This will help to ensure compatibility with ETC.
 
 
-An Epilogue on Basic Controls
+#### An Epilogue on Basic Controls
 
 Note that we aren’t discussing how to produce certain types of images or
 effects. While the controls offered by ETC are generally similar, each
@@ -600,7 +600,7 @@ If you are searching for additional modes of expression, you have come
 to the right place. Let’s make ETC that bigger boat…
 
 
-The USB Drive’s Folder Structure
+#### The USB Drive’s Folder Structure
 
 As has been mentioned, ETC will only properly work while a USB drive is
 attached to it. Modes are run directly from this attached USB drive.
@@ -666,7 +666,7 @@ A couple items worth noting here about the modes:
     be recognized by contained mode.
 
 
-Taking the USB Drive to your Computer
+#### Taking the USB Drive to your Computer
 
 Whether you want to load new modes, download some of your screenshots,
 or edit the `Scenes.csv` file or the modes themselves, any of these
@@ -733,16 +733,16 @@ When working with these modes, you will most likely want to work with
 their folders rather than handling the files within each folder. For
 example:
 
--   *If you want to add a new mode to ETC,* make sure to copy the full
+-   If you want to **add a new mode to ETC,** make sure to copy the full
     folder into the USB drive’s `Modes` folder. (And if you downloaded a
     ZIP file, make sure that you have decompressed it to a folder before
     moving it to ETC’s USB drive.)
--   *If you want to back a mode up,* copy the folder over to your
+-   If you want to **back a mode up,** copy the folder over to your
     computer.
--   *If you want to rename a mode,* rename the folder.
--   *If you want to duplicate a mode and make changes to the new copy,*
+-   If you want to **rename a mode,** rename the folder.
+-   If you want to **duplicate a mode and make changes to the new copy,**
     duplicate the folder and name the copy something different.
--   *If you want to delete a mode,* make sure to delete the entire mode
+-   If you want to **delete a mode,** make sure to delete the entire mode
     folder.
 
 In short, if you aren’t editing the files themselves, then working with
@@ -957,7 +957,7 @@ considering:
 -   **A memory-intensive mode will always be running.** If you load a
     mode that requires a significant amount of RAM (say, for loading
     numerous images during `setup()`), realize that this memory will be
-    taken up even when another mode is called up and generating output.\
+    taken up even when another mode is called up and generating output.
     So if you encounter laggy performance of ETC in general, realize
     that this could very well be one of your modes hogging memory. One
     way to troubleshoot this would be to load fewer modes (by moving
@@ -965,7 +965,7 @@ considering:
 -   **Keep your support files to a minimum.** Again, a good example
     would be a mode that loads images. We’d advise you to keep the
     images within a mode folder to 10MB or less. Your mileage will
-    definitely vary, but that is our one-size-fits-all suggestion.\
+    definitely vary, but that is our one-size-fits-all suggestion.
     Also note that the size of loaded image files could often be
     optimized. If you download a photo straight from your camera or
     phone, you’d do well to reduce the resolution to something closer to
@@ -993,7 +993,7 @@ and to (hopefully) produce graphical output:
     frame of video output. Common activities here including taking in
     any control changes since the last frame, redrawing with updated
     audio information, executing changes based on any trigger or other
-    messages received, etc. etc.\
+    messages received, etc. etc.
     Note that code in this block will get hammered so please be a bit
     parsimonious, only including actions that need to be taken for each
     and every frame.
@@ -1043,41 +1043,29 @@ Having walked through the general framework and requirements of ETC’s modes, i
 -   `etc.audio_in` - A *list* of the 100 most recent audio levels
     registered by ETC. These values are stored as 16-bit, signed
     integers, ranging from a minimum of -32,768 to a maximum of
-    +32,767. 
-    
-    Additionally, depressing the *Trigger* button populates this list
+    +32,767. Additionally, depressing the *Trigger* button populates this list
     with a sine wave, simulating audio input to ETC.
 -   `etc.audio_trig` - A *boolean* value indicating whether or not
     incoming audio has exceeded the fixed threshold level (approximately
     80% of maximum) since the last frame was drawn via the
-    `draw()`function.
-    
-    Additionally, depressing the *Trigger* button sets `etc.audio_trig`
+    `draw()`function. Additionally, depressing the *Trigger* button sets `etc.audio_trig`
     to `true`.
 -   `etc.bg_color` - A *tuple* of three integers representing the red,
     green, and blue components of the current background color.
 -   `etc.knob1` - A *float* representing the current value of the
-    *Foreground 1 Control* knob.
-    
-    Additionally, an incoming MIDI control change message of number `21`
+    *Foreground 1 Control* knob. Additionally, an incoming MIDI control change message of number `21`
     on the current global MIDI channel will replace the value of
     foreground knob 1, until the knob is moved again.
 -   `etc.knob2` - A *float* representing the current value of the
-    *Foreground 2 Control* knob.
-    
-    Additionally, an incoming MIDI control change message of number `22`
+    *Foreground 2 Control* knob. Additionally, an incoming MIDI control change message of number `22`
     on the current global MIDI channel will replace the value of
     foreground knob 2, until the knob is moved again.
 -   `etc.knob3` - A *float* representing the current value of the
-    *Foreground 3 Control* knob.
-    
-    Additionally, an incoming MIDI control change message of number `23`
+    *Foreground 3 Control* knob. Additionally, an incoming MIDI control change message of number `23`
     on the current global MIDI channel will replace the value of
     foreground knob 3, until the knob is moved again.
 -   `etc.knob4` - A *float* representing the current value of the
-    *Foreground 4 Control* knob.
-    
-    Additionally, an incoming MIDI control change message of number `24`
+    *Foreground 4 Control* knob. Additionally, an incoming MIDI control change message of number `24`
     on the current global MIDI channel will replace the value of
     foreground knob 4, until the knob is moved again.
 -   `etc.lastgrab` - A **Pygame** *surface* that contains an image of
@@ -1106,7 +1094,7 @@ Having walked through the general framework and requirements of ETC’s modes, i
     and increments each time a *timing clock* message is received. After
     the counter reaches its maximum value of `24` (or whenever a
     real-time *start* message is received), the counter will reset on
-    the next tick to `1`.\
+    the next tick to `1`.
     If these MIDI messages are transmitted to ETC in rhythmical time,
     your mode could trigger activity on specified beats. For example, if
     you were to send real-time messages at the standard rate of 24 ticks
@@ -1133,8 +1121,8 @@ function worth mentioning as well:
     returns a *tuple* of three integers representing the red, green, and
     blue components of this color. In the factory modes, you will often
     see a local variable (usually `color`) being set by this function,
-    like so…\
-    `color = etc.color_picker()`\
+    like so…
+    `color = etc.color_picker()`
     The idea here is that you can easily set a foreground color based on
     foreground knob 4. Then when you switch between modes that are using
     this mapping, the foreground (and background) color will be
@@ -1149,8 +1137,7 @@ frame produced, querying any of the variables within the `draw()`
 function is an effective way to dynamically update your mode’s output.
 
 Finally, we are not telling you how to make modes. We aren’t telling you
-what is a good idea, and even our mode categories (scope versus trigger)
-admit to being limited. This is where you and your ideas come in.
+what makes a good idea. Even our mode categories admit to being limited (scope versus trigger). This is where you and your ideas come in.
 
 We leave it to you to have a working knowledge of **Python**, to come up
 with some ideas for tweaks or completely new modes, and to try and make
@@ -1159,7 +1146,7 @@ come across some happy accidents as you go. As always, it’s along the
 way that art gets made.
 
 
-Wirelessly Programming with the USB WiFi Interface
+#### Wirelessly Programming with the USB WiFi Interface
 
 In chapter three, we looked at the format of the USB drive as well as
 how to add new modes and work with files and folders by connecting the
@@ -1210,7 +1197,7 @@ text editor, please take the following actions:
 
 Once ETC has booted up, you should be able to find and connect to ETC’s
 WiFi network just as you would any other network. In the example below,
-I have named ETC’s network `ETCETC`.
+we have named ETC’s network `ETCETC`.
 
 ![](ETCETC-WiFi-1.png)
 
@@ -1261,8 +1248,8 @@ By clicking on the `Screen Grabs` link in the upper navigation bar, the
 
 ![](3-Screen-grabs-main.png)
 
-This page displays thumbnails of all stored screenshots. So still using
-our example file structure from chapter three, here we can see our three
+This page displays thumbnails of all stored screenshots. Using
+our example file structure from chapter three, we can see our three
 screenshots from the USB drive’s `Grabs` folder. By clicking on any of
 these thumbnail images, a larger preview is presented.
 
@@ -1278,7 +1265,6 @@ functions must still be done by connecting the USB stick to your
 computer (see chapter three), the web console allows you both to quickly
 sample all of the screenshots you have taken and to program on the fly,
 seeing the results as you go. If you plan on doing your own tweaks
-and/or programming with ETC, you may want to consider the *USB WiFi
-interface* as [a small
-cost](https://www.critterandguitari.com/collections/accessories)
-yielding a large convenience.
+and/or programming with ETC, you may want to consider the [*USB WiFi
+interface*](https://www.critterandguitari.com/shop/usb-wifi-adapter) as a small
+cost yielding a large convenience.
