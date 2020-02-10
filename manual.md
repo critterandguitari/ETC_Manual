@@ -45,9 +45,9 @@ Follow these steps to make your sound visual.
     *Status LED* will glow pink while the device shuts itself down. Once
     the *Status LED* is off, it is safe to unplug the power supply.
 
-# Chapter One: ETC™ Concepts
+# Chapter One: ETC Concepts
 
-### What is this box with the curious icons?!‽
+### What is this box with the curious icons?!
 
 Again, welcome to the world of **ETC**! As this video instrument has an
 inherent range and can work for different people in different ways, let
@@ -218,7 +218,7 @@ you use it a week from now. This is to say feel free to skip information
 that isn’t of use to you today; you may find that later chapters
 appreciate in value over time.
 
-# Chapter Two: General Operation of ETC™
+# Chapter Two: General Operation of ETC
 
 ### Knowing the knobs and buttons is worth more than a thousand words.
 
@@ -570,7 +570,7 @@ reference](factory-modes-reference.html) for a sense of the included
 options and their range. And if those provided options aren’t enough,
 then continue with us to the next chapter.
 
-# Chapter Three: Accessing ETC™ from Elsewhere
+# Chapter Three: Accessing ETC from Elsewhere
 
 ### Getting into and out of ETC.
 
@@ -875,7 +875,7 @@ drum pads (often sent on channel 10).
 Finally, if this `MIDI-Channel.txt` file is deleted or not readable, ETC
 will default to MIDI channel 1 when it boots up.
 
-# Chapter Four: Programming For ETC™, and Access via WiFi
+# Chapter Four: Programming For ETC, and Access via WiFi
 
 ### For those with a text editor and a dream.
 
