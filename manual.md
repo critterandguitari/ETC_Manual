@@ -1268,3 +1268,36 @@ seeing the results as you go. If you plan on doing your own tweaks
 and/or programming with ETC, you may want to consider the [*USB WiFi
 interface*](https://www.critterandguitari.com/shop/usb-wifi-adapter) as a small
 cost yielding a large convenience.
+
+# Chapter Five - Appendix
+
+## 5.1 Burning SD Card Disk Image 
+
+In addition to storing modes, the microSD card also stores the ETC's operating system.  
+
+Burning a fresh disk image on the microSD card will reset your ETC to the 'factory' state. This is useful to update to the latest ETC OS, to fix a problem with the microSD card, or to burn a new microSD card.
+
+If you are looking to use a new card with the same specifications of the card that shipped with your ETC, those specificaitons are: SanDisk Edge 4GB microSDHC C4 UHS-I.
+
+Follow these steps to burn a new SD card:
+
+1. Download the microSD card disk image to your computer: 
+
+    - Current OS release: [ETC OS](http://thepeacetreaty.org/etc/diskimages/20170310-etc.img). Requires 4GB or larger microSD card.
+     
+2. **Optional**: If you want to unzip the disk image please use one of the following programs: 
+
+    - Windows: [7-Zip](http://www.7-zip.org)
+
+    - Mac: [The Unarchiver](http://unarchiver.c3.cx/unarchiver)
+
+    - Linux: [Unzip](https://linux.die.net/man/1/unzip) 
+
+3. Download the flasher program to your computer: https://www.balena.io/etcher/  
+4. Power down the ETC.
+5. Locate the thin slit in the rear of the enclosure (between the `MIDI In` and `HDMI` ports.)
+6. Use a pin or paperclip to press in on the black microSD card to eject it and it will spring out gently.
+7. Insert microSD into your computer (you may need an adapter or card reader)
+8. Use the Etcher program to burn the unzipped OS to the mircoSD card. When Etcher is finished your computer may display a message similar to 'This disk is not readable.' This message is normal and you may click 'Eject' to proceed.
+9. Remove the microSD card from your computer and reinsert it in ETC. Make sure that the SD card is going into the socket on the circuit board, as it is easy to drop it into the device. If you can wiggle it a lot, it probably is not in the socket. Use the same pin/paperclip to press it in until you hear/feel a 'click.'
+10. Restart the ETC.
